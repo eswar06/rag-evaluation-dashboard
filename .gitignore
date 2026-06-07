@@ -1,0 +1,38 @@
+# ==========================================
+# GLOBAL MONOREPO IGNORE RULES
+# ==========================================
+
+# Ignore node_modules anywhere in the project
+node_modules/
+**/node_modules/
+
+# Ignore Next.js build outputs anywhere
+.next/
+**/.next/
+out/
+**/out/
+build/
+**/build/
+
+# Environment and Debug logs
+.env*
+**/.env*
+*.log
+*.pem
+
+# Testing and Misc
+coverage/
+**/coverage/
+.DS_Store
+.vercel
+
+# Yarn / PnP configurations
+.pnp*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# TypeScript build info
+*.tsbuildinfo
